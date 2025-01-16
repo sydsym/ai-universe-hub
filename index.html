@@ -17,8 +17,32 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/e60a6371cc.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
+    <header class="text-center space-y-5 my-5">
+      <h1 class="text-3xl font-bold">AI Universe Hub</h1>
+      <button class="btn btn-secondary">Sort by date</button>
+    </header>
+    <main>
+      <section
+        id="aitechContainer"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mx-2 md:mx-10 lg:mx-20"
+      ></section>
+      <div class="flex justify-center my-5">
+        <button id="seeMoreBtn" class="btn btn-secondary">See More</button>
+      </div>
+      <!-- spinner -->
+      <span
+        id="loadingSpinner"
+        class="loading loading-ring loading-lg block m-auto h-[50vh]"
+      ></span>
+    </main>
     <script src="js/index.js"></script>
   </body>
 </html>
