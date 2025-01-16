@@ -42,6 +42,21 @@
         id="loadingSpinner"
         class="loading loading-ring loading-lg block m-auto h-[50vh]"
       ></span>
+      <!-- mdoal -->
+      <dialog id="detailsModal" class="modal">
+        <div class="modal-box max-w-[70vw] relative">
+          <form method="dialog" class="absolute right-0 top-0 m-3">
+            <button onclick="handleClose()" class="btn btn-error rounded-full">
+              <img class="w-7" src="resources/favicon.png" alt="" />
+            </button>
+          </form>
+          <span
+            id="loadingSecondSpinner"
+            class="loading loading-ring loading-lg block m-auto"
+          ></span>
+          <div id="detailsContainer"></div>
+        </div>
+      </dialog>
     </main>
     <script src="js/index.js"></script>
   </body>
